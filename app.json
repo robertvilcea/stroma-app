@@ -1,0 +1,14 @@
+{
+  "expo": {
+    "name": "STROMA",
+    "slug": "stroma-app",
+    "scheme": "com.robertvilcea.stroma",
+    "sdkVersion": "52.0.0",
+    "ios": {
+      "bundleIdentifier": "com.robertvilcea.stroma"
+    },
+    "extra": {
+      "expoClientId": "YOUR_CLIENT_ID_HERE"
+    }
+  }
+}

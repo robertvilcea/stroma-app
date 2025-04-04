@@ -1,0 +1,23 @@
+{
+  "name": "stroma-app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "expo start"
+  },
+  "dependencies": {
+    "expo": "~52.0.3",
+    "expo-auth-session": "~5.4.0",
+    "expo-router": "^3.4.10",
+    "expo-secure-store": "~12.8.1",
+    "nativewind": "^4.0.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-native": "0.73.6",
+    "react-native-safe-area-context": "4.8.2",
+    "react-native-screens": "~3.29.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.5"
+  }
+}
