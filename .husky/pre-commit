@@ -1,0 +1,1 @@
+npx husky set .husky/pre-commit "npm run pre-commit"
