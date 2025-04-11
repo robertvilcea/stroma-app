@@ -1,20 +1,20 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import AppNavigator from './navigation/AppNavigator';
+import { WatchlistProvider } from './context/WatchlistContext';
+import { StatusBar } from 'react-native';
+
+import Toast from 'react-native-toast-message';
+import { toastConfig } from './components/ToastConfig'; // opțional, dacă ai unul custom
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <WatchlistProvider>
+      <NavigationContainer>
+        <StatusBar barStyle="light-content" backgroundColor="#000" />
+        <AppNavigator />
+      </NavigationContainer>
+      <Toast config={toastConfig} />
+    </WatchlistProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
